@@ -1,0 +1,76 @@
+# ============================================================
+# RetailBank EDW - .gitignore
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Environment & Secrets - NEVER commit these
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+config.local.*
+credentials.json
+
+# Azure & Databricks
+.databricks/
+databricks.yml.local
+*.dbx
+
+# SQL Server connection strings
+connection_strings.txt
+db_config.ini
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Logs
+*.log
+logs/
+*.tmp
+*.temp
+
+# Excel temp files
+~$*.xlsx
+~$*.xls
+
+# PowerPoint temp files
+~$*.pptx
+~$*.ppt
+
+# Large data files - use cloud storage instead
+*.csv.bak
+*.parquet
+*.delta
+data/raw/
+data/temp/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
